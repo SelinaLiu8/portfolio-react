@@ -44,3 +44,43 @@
     margin-top: 6px;
     color: var(--color-primary);
 }
+
+/* ========== MEDIA QUERIES (MEDIUM) ========== */
+
+@media screen and (max-width: 1024px){
+    #experiences {
+        padding-top: 7rem;
+    }
+
+    .experience__container {
+        grid-template-columns: 1fr;
+    }
+
+    .experience__container > div {
+        width: 80%;
+        padding: 2rem;
+        margin: 0 auto;
+    }
+
+    .experience__content {
+        padding: 1rem;
+    }
+}
+
+
+/* ========== MEDIA QUERIES (SMALL) ========== */
+
+@media screen and (max-width: 600px){
+    #experiences {
+        padding-top: 5rem;
+    }
+
+    .experience__container {
+        padding: 1rem;
+    }
+
+    .experience__container > div {
+        width: 100%;
+        padding: 2rem 1rem;
+    }
+}

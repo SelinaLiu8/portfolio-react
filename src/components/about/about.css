@@ -80,6 +80,10 @@
 /* ========== MEDIA QUERIES (MEDIUM) ========== */
 
 @media screen and (max-width: 1024px){
+    #about {
+        padding-top: 7rem;
+    }
+
     .about__container {
         grid-template-columns: 1fr;
         gap: 0;
@@ -99,6 +103,10 @@
 /* ========== MEDIA QUERIES (SMALL) ========== */
 
 @media screen and (max-width: 600px){
+    #about {
+        padding-top: 5rem;
+    }
+
     .about__me {
         width: 65%;
         margin: 0 auto 3rem;
