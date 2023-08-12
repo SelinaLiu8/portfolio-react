@@ -37,7 +37,7 @@ const About = () => {
               <small>15+ software engineering projects and 10+ UX/UI projects</small>
             </article>
           </div>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea esse quod consectetur error. Ratione culpa debitis architecto fuga id accusamus repellendus necessitatibus rem. Minima esse ducimus voluptate accusantium! Dolorem.</p>
+          <p>I'm an undergrad student at the University of Michigan majoring in art & design and minoring in computer science and user experience design. About a year and a half ago, I began experimenting with coding and UX/UI design. In order to engage more closely with the UX/UI industry, I joined Alpha Theta Delta, a professional multidisciplinary design fraternity on campus. I presently hold the job of VP of Outreach, where I get to assist our fraternity in developing relationships with other organizations. In addition, I became a member of CLAWS's (Collaborative Lab for Advancing Work in Space) Augmented Reality team to build the annual NASA Spacesuit Challenge in Unitty and C#. Procter & Gamble recently hired me as a summer intern for information technology, where I will focus on UX/UI design.</p>
           <a href="contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
