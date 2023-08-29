@@ -1,26 +1,26 @@
 import React from 'react'
 import './portfolio.css'
-import Placement from '../../assets/Procter-Gamble-SWOT.jpg'
+import PersonalWebsite from '../../assets/website_pic.png'
 
 
 const data = [
   {
     id: 1,
-    image: Placement,
-    title: "CL.AI",
+    image: PersonalWebsite,
+    title: "Personal Website",
     github: "http://github.com",
     demo: "http://github.com",
   },
   {
     id: 2,
-    image: Placement,
+    image: PersonalWebsite,
     title: "CL.AI",
     github: "http://github.com",
     demo: "http://github.com",
   },
   {
     id: 3,
-    image: Placement,
+    image: PersonalWebsite,
     title: "CL.AI",
     github: "http://github.com",
     demo: "http://github.com",
