@@ -50,11 +50,11 @@ header {
     border-radius: 20rem 20rem 0 0;
     overflow: hidden;
     padding: 5rem 1.5rem 0 1.5rem;
+    display: flex;
 }
 
 .me img {
-    width: 100%;
-    bottom: 0;
+    justify-content: center;
 }
 
 /* ========== SCROLL DOWN ========== */

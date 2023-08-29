@@ -17,9 +17,9 @@ const Contact = () => {
           </article>
           <article className="contact__option">
             {MdOutlineEmail}
-            <h4>Email</h4>
-            <h5>selinal@umich.edu</h5>
-            <a href="mailto:selinal@umich.edu">Send me an Email</a>
+            <h4>Phone</h4>
+            <h5>734-972-5295</h5>
+            <a href="mailto:selinal@umich.edu">Shoot me a text</a>
           </article>
           <article className="contact__option">
             {MdOutlineEmail}
@@ -28,6 +28,7 @@ const Contact = () => {
             <a href="mailto:selinal@umich.edu">Send me an Email</a>
           </article>
         </div>
+        <form action=""></form>
       </div>
     </section>
   )
