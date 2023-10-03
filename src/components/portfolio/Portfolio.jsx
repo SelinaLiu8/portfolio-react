@@ -1,6 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 import PersonalWebsite from '../../assets/website_pic.png'
+import NASALogo from '../../assets/nasa-logo.png'
 
 
 const data = [
@@ -8,15 +9,15 @@ const data = [
     id: 1,
     image: PersonalWebsite,
     title: "Personal Website",
-    github: "http://github.com",
-    demo: "http://github.com",
+    github: "https://github.com/SelinaLiu8/portfolio-react",
+    demo: "https://selinaliu8.github.io/portfolio-react/",
   },
   {
     id: 2,
-    image: PersonalWebsite,
-    title: "CL.AI",
+    image: NASALogo,
+    title: "NASA SUIT Challenge",
     github: "http://github.com",
-    demo: "http://github.com",
+    demo: "https://www.youtube.com/watch?v=aLqUng8fB_o",
   },
   {
     id: 3,
