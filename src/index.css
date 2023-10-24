@@ -11,18 +11,42 @@
 }
 
 :root {
+    --transition: all 400ms ease;
+
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+}
+
+:root .light {
+    --color-bg: #FFCC3D;
+    --color-bg-variant: #fdcf50;
+    --color-primary: #ffa341;
+    --color-primary-variant: rgba(177, 140, 7, 0.4);
+    --color-white: #419bf9;
+    --color-light: rgba(72, 72, 72, 0.6);
+}
+
+:root .dark {
     --color-bg: #1f1f38;
     --color-bg-variant: #2c2c6c;
     --color-primary: #4db5ff;
     --color-primary-variant: rgba(77, 181, 255, 0.4);
     --color-white: #fff;
     --color-light: rgba(255, 255, 255, 0.6);
+}
 
-    --transition: all 400ms ease;
+.light {
+    background: white;
+    color: black;
+    transition: var(--transition);
+}
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+.dark {
+    background: #1f1f38;
+    color: white;
+    background-image: url(./assets/bg-texture.png);
+    transition: var(--transition);
 }
 
 html {
@@ -35,10 +59,7 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
-    color: var(--color-white);
     line-height: 1.7;
-    background-image: url(./assets/bg-texture.png);
 }
 
 /* ========== GENERAL STYLES ========== */

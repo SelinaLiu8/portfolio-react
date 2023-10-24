@@ -21,7 +21,6 @@ const Footer = () => {
       </div>
 
       <div className='footer__copyright'>
-        <small>&copy; EGATOR Tutorials. All rights reserved</small>
         <small>This website was created with inspiration from EGATOR Tutorials by EGATOR.</small>
       </div>
     </footer>

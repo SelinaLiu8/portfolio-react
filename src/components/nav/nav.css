@@ -29,6 +29,7 @@ nav {
 }
   
 .nav__mode {
+    padding: 0.7rem;
     button {
       background: none;
       border: none;
@@ -37,25 +38,18 @@ nav {
     }
 }
 
-.nav__main a {
+.nav__main a, .nav__mode button {
     background: transparent;
     padding: 0.9rem;
     border-radius: 50%;
     display: flex;
     color: var(--color-light);
     font-size: 1.1rem;
-}
-
-.nav__logo {
-    background: transparent;
-    color: var(--color-light);
-    font-size: 1.1rem;
-    width: 100%;
     transition: var(--transition);
 }
 
-
-.nav__main a:hover, .nav__logo:hover {
+.nav__main a:hover, .nav__mode button:hover {
+    color: var(--color-white);
     background: rgba(0, 0, 0, 0.3);
     transition: var(--transition);
 }

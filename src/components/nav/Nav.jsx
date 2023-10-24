@@ -7,14 +7,13 @@ import { MdOutlineDesignServices } from 'react-icons/md'
 import { RiServiceLine } from 'react-icons/ri'
 import { BiPhoneCall } from 'react-icons/bi'
 import { FiSun } from 'react-icons/fi'
+import { BsMoon } from 'react-icons/bs'
+import { useTheme } from '../ThemeContext'
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#');
-  const [isDarkMode, setDarkMode] = useState(false);
-
-  const toggleMode = () => {
-    setDarkMode(!isDarkMode);
-  };
+  const {theme, toggleTheme} = useTheme();
+  console.log(theme);
 
   return (
     <nav>
@@ -26,7 +25,9 @@ const Nav = () => {
         <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}><BiPhoneCall /></a>
       </div>
       <div className='nav__mode'>
-        <button onClick={toggleMode}><span className='nav__logo'><FiSun/></span></button>
+        <button onClick={toggleTheme} className={theme}>
+          {theme === "light" ? <FiSun /> : <BsMoon />}
+        </button>
       </div>
     </nav>
   )
