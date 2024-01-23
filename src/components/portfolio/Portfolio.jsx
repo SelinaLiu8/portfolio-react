@@ -18,13 +18,6 @@ const data = [
     title: "NASA SUIT Challenge",
     github: "http://github.com",
     demo: "https://www.youtube.com/watch?v=aLqUng8fB_o",
-  },
-  {
-    id: 3,
-    image: PersonalWebsite,
-    title: "CL.AI",
-    github: "http://github.com",
-    demo: "http://github.com",
   }
 ]
 
