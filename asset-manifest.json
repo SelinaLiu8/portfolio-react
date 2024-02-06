@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.e8cf4bc3.css",
-    "main.js": "/portfolio-react/static/js/main.c59d1746.js",
+    "main.css": "/portfolio-react/static/css/main.f5650e2b.css",
+    "main.js": "/portfolio-react/static/js/main.a76d78c5.js",
     "static/media/website_pic.png": "/portfolio-react/static/media/website_pic.2d8beaa97b1abbb4bcdc.png",
     "static/media/IMG_9300.jpg": "/portfolio-react/static/media/IMG_9300.1e2b1fd97c6e8000c898.jpg",
     "static/media/me.png": "/portfolio-react/static/media/me.b37dde3348bb683b8fa1.png",
+    "static/media/memble-persona.jpg": "/portfolio-react/static/media/memble-persona.80cd10f4e103132f5de9.jpg",
     "static/media/Resume_10:26.pdf": "/portfolio-react/static/media/Resume_10:26.44117377d7b27c555161.pdf",
     "static/media/nasa-logo.png": "/portfolio-react/static/media/nasa-logo.85550010d7334d9be62e.png",
     "index.html": "/portfolio-react/index.html",
-    "main.e8cf4bc3.css.map": "/portfolio-react/static/css/main.e8cf4bc3.css.map",
-    "main.c59d1746.js.map": "/portfolio-react/static/js/main.c59d1746.js.map"
+    "main.f5650e2b.css.map": "/portfolio-react/static/css/main.f5650e2b.css.map",
+    "main.a76d78c5.js.map": "/portfolio-react/static/js/main.a76d78c5.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8cf4bc3.css",
-    "static/js/main.c59d1746.js"
+    "static/css/main.f5650e2b.css",
+    "static/js/main.a76d78c5.js"
   ]
 }
