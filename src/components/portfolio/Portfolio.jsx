@@ -4,6 +4,9 @@ import Popup from 'reactjs-popup';
 import PersonalWebsite from '../../assets/website_pic.png'
 import NASALogo from '../../assets/nasa-logo.png'
 import MemblePersona from '../../assets/memble-persona.jpg'
+import Memble from '../../assets/memble_mockup.png'
+import Destigma from '../../assets/destigma_mockup.png'
+import DestigmaPersona from '../../assets/destigma_persona.png'
 
 
 const data = [
@@ -37,7 +40,7 @@ const data = [
   },
   {
     id: 3,
-    image: PersonalWebsite, //place holder, come change it later
+    image: Memble,
     title: "Memble",
     website: "https://www.canva.com/design/DAF2D-sBinw/k7vs0wNuLWRkZ1M8ofNAmQ/edit?utm_content=DAF2D-sBinw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     btnName: "Presentation",
@@ -48,15 +51,15 @@ const data = [
     personaImg: MemblePersona
   },
   { id: 4,
-    image: PersonalWebsite, //place holder, come change it later
+    image: Destigma,
     title: "Destigma",
     website: "https://docs.google.com/presentation/d/1IZ_sWUXCSRlrvZUgj5QeYpEsaar4eXtb2zJ4ZPr2QPM/edit?usp=sharing",
     btnName: "Presentation",
-    demo: "https://drive.google.com/file/d/1eW6_JDZKZlXpeFoOTsnwka6Qg3ViMfI_/view?usp=sharing",
+    demo: "https://drive.google.com/file/d/1XiUWioyuJg6TJAtsPGeOXIqEAqnw9RhY/view?usp=sharing",
     description: "At DESTIGMA, we believe that comprehensive and inclusive sex education is a fundamental human right. Our mission is to provide accessible and empowering resources for people of all genders, sexual orientations, and backgrounds to help them make informed decisions about their sexual health and well-being. We strive to create a safe, sex-positive space that promotes body positivity, consent, and respect for all individuals. By destigmatizing conversations around sex and addressing the gaps in traditional sex education, we aim to empower our community with the knowledge and tools they need to navigate healthy, fulfilling sexual lives.",
     problemTitle: "Initial Problem",
-    problemText: "Capturing the essence of personal growth alongside preserving photo and video memories poses a significant challenge. It becomes a complex task to visually trace the evolution of one's identity over the years, highlighting the need for an innovative solution that seamlessly integrates the facets of self-discovery and cherished moments. We are also trying to make it so it is not overused or focused on the “social”/”popularity” aspect of modern apps. It focuses solely on capturing one’s growth, day-to-day goals, and impactful memories.",
-    personaImg: MemblePersona}
+    problemText: "The sex ed students receive in schools and from their parents is often abstinence based, cishet normative, otherwise incomplete or even just non-existent.",
+    personaImg: DestigmaPersona}
 ]
 
 const Portfolio = () => {
