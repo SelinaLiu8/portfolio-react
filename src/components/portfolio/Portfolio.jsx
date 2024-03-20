@@ -59,7 +59,14 @@ const data = [
     description: "At DESTIGMA, we believe that comprehensive and inclusive sex education is a fundamental human right. Our mission is to provide accessible and empowering resources for people of all genders, sexual orientations, and backgrounds to help them make informed decisions about their sexual health and well-being. We strive to create a safe, sex-positive space that promotes body positivity, consent, and respect for all individuals. By destigmatizing conversations around sex and addressing the gaps in traditional sex education, we aim to empower our community with the knowledge and tools they need to navigate healthy, fulfilling sexual lives.",
     problemTitle: "Initial Problem",
     problemText: "The sex ed students receive in schools and from their parents is often abstinence based, cishet normative, otherwise incomplete or even just non-existent.",
-    personaImg: DestigmaPersona}
+    personaImg: DestigmaPersona
+  },
+  {
+    id: 5,
+    image: Destigma,
+    title: "My Graphic Design Work",
+    description: "Below are all my art and design works!"
+  }
 ]
 
 const Portfolio = () => {
