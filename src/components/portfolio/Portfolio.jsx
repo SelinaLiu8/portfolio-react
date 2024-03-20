@@ -61,12 +61,12 @@ const data = [
     problemText: "The sex ed students receive in schools and from their parents is often abstinence based, cishet normative, otherwise incomplete or even just non-existent.",
     personaImg: DestigmaPersona
   },
-  {
-    id: 5,
-    image: Destigma,
-    title: "My Graphic Design Work",
-    description: "Below are all my art and design works!"
-  }
+  // {
+  //   id: 5,
+  //   image: Destigma,
+  //   title: "My Graphic Design Work",
+  //   description: "Below are all my art and design works!"
+  // }
 ]
 
 const Portfolio = () => {
