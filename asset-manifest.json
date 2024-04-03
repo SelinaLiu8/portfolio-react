@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.f5650e2b.css",
-    "main.js": "/portfolio-react/static/js/main.4471e39f.js",
+    "main.css": "/portfolio-react/static/css/main.d4f0fec0.css",
+    "main.js": "/portfolio-react/static/js/main.1e93770e.js",
     "static/media/website_pic.png": "/portfolio-react/static/media/website_pic.2d8beaa97b1abbb4bcdc.png",
     "static/media/IMG_9300.jpg": "/portfolio-react/static/media/IMG_9300.1e2b1fd97c6e8000c898.jpg",
     "static/media/me.png": "/portfolio-react/static/media/me.b37dde3348bb683b8fa1.png",
     "static/media/destigma_persona.png": "/portfolio-react/static/media/destigma_persona.a6cf64c88035c9418138.png",
+    "static/media/Uevent.png": "/portfolio-react/static/media/Uevent.95c9eb2edb0f2336891b.png",
     "static/media/memble_mockup.png": "/portfolio-react/static/media/memble_mockup.d6135706b49b31a6819a.png",
     "static/media/destigma_mockup.png": "/portfolio-react/static/media/destigma_mockup.9b8395c1ba4a9109ffd6.png",
     "static/media/memble-persona.jpg": "/portfolio-react/static/media/memble-persona.80cd10f4e103132f5de9.jpg",
     "static/media/selina_resume_Feb_24.pdf": "/portfolio-react/static/media/selina_resume_Feb_24.93946122efa7c625431d.pdf",
     "static/media/nasa-logo.png": "/portfolio-react/static/media/nasa-logo.85550010d7334d9be62e.png",
     "index.html": "/portfolio-react/index.html",
-    "main.f5650e2b.css.map": "/portfolio-react/static/css/main.f5650e2b.css.map",
-    "main.4471e39f.js.map": "/portfolio-react/static/js/main.4471e39f.js.map"
+    "main.d4f0fec0.css.map": "/portfolio-react/static/css/main.d4f0fec0.css.map",
+    "main.1e93770e.js.map": "/portfolio-react/static/js/main.1e93770e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5650e2b.css",
-    "static/js/main.4471e39f.js"
+    "static/css/main.d4f0fec0.css",
+    "static/js/main.1e93770e.js"
   ]
 }
