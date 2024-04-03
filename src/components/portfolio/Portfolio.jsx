@@ -7,6 +7,7 @@ import MemblePersona from '../../assets/memble-persona.jpg'
 import Memble from '../../assets/memble_mockup.png'
 import Destigma from '../../assets/destigma_mockup.png'
 import DestigmaPersona from '../../assets/destigma_persona.png'
+import UEvent from '../../assets/Uevent.png'
 
 
 const data = [
@@ -61,12 +62,15 @@ const data = [
     problemText: "The sex ed students receive in schools and from their parents is often abstinence based, cishet normative, otherwise incomplete or even just non-existent.",
     personaImg: DestigmaPersona
   },
-  // {
-  //   id: 5,
-  //   image: Destigma,
-  //   title: "My Graphic Design Work",
-  //   description: "Below are all my art and design works!"
-  // }
+  {
+    id: 5,
+    image: UEvent,
+    title: "UEvent",
+    website: "https://docs.google.com/presentation/d/1HCo4aw-wI0puLCiM4D3uZN8co0GVqXRyRNrY8dVQYmg/edit?usp=sharing",
+    btnName: "Presentation",
+    demo: "https://drive.google.com/file/d/1xWjXPk12VLqDejVF4GlYq0p9wtOXUoyd/view?usp=sharing",
+    description: "My and four other friends of mine co-founded this UEvent 2 years ago. This is an event-based app where students can look for all on-campus events or they can post events. There's currently over 1000 donwloads on the App Store with a high rating of 4.8 / 5 stars."
+  }
 ]
 
 const Portfolio = () => {
@@ -104,7 +108,7 @@ const Portfolio = () => {
                       </>
                     }
                     <a href={website} className='btn' target='_blank'>{btnName}</a>
-                    <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
+                    <a href={demo} className='btn btn-primary' target='_blank'>Demo</a>
                   </div>
                 </Popup>
               </div>

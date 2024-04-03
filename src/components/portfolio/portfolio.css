@@ -27,6 +27,11 @@
     height: 70%;
 }
 
+.portfolio__item-img img {
+    object-fit: cover;
+    height: 100%;
+}
+
 .portfolio__item h3 {
     margin: 1.2rem 0 2rem;
     text-align: center;
