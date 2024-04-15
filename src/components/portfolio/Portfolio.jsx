@@ -9,69 +9,18 @@ import Destigma from '../../assets/destigma_mockup.png'
 import DestigmaPersona from '../../assets/destigma_persona.png'
 import UEvent from '../../assets/Uevent.png'
 
-
-const data = [
+const csProjects = [
   {
-    id: 1,
-    image: PersonalWebsite,
-    title: "Personal Website",
-    website: "https://github.com/SelinaLiu8/portfolio-react",
-    demo: "https://selinaliu8.github.io/portfolio-react/",
-    btnName: "GitHub",
-    description: `
-      Welcome to my personal portfolio website! 🚀
-
-      Explore my latest project, where I've meticulously crafted a seamless user experience featuring both light and dark modes. Immerse yourself in the sleek design as you navigate through the various sections, each meticulously designed with attention to detail.
-
-      Powered by React.js, every element of this website has been hand-coded with precision and passion. From the dynamic animations to the responsive layout, every aspect has been carefully crafted to ensure a seamless experience across all devices.
-
-      Whether you're here to discover my latest work or learn more about my skills and experiences, this portfolio represents the culmination of my dedication to creating intuitive and visually stunning web experiences.
-
-      Take a tour, and let's embark on a journey through creativity and innovation together! 💡
-    `.split('\n\n')
+    routeName : "personal_portfolio_website",
+    title : "Personal Portfolio Website",
+    image: PersonalWebsite
   },
   {
-    id: 2,
-    image: NASALogo,
-    title: "NASA SUIT Challenge",
-    website: "https://claws.engin.umich.edu/",
-    btnName: "Website",
-    demo: "https://www.youtube.com/watch?v=aLqUng8fB_o",
-    description: "The University of Michigan’s CLAWS (Collaborative Lab For Advancing Work in Space) Team is a multi-disciplinary group of undergraduate and graduate students that has competed in the NASA SUITS Challenge since 2018. CLAWS consists of 60 students from a broad set of majors working on research, design, business, and development for space exploration."
-  },
-  {
-    id: 3,
-    image: Memble,
-    title: "Memble",
-    website: "https://www.canva.com/design/DAF2D-sBinw/k7vs0wNuLWRkZ1M8ofNAmQ/edit?utm_content=DAF2D-sBinw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
-    btnName: "Presentation",
-    demo: "https://drive.google.com/file/d/1bA1q0-OE7ZshpZrrVcDI_3nh4tN4v65I/view?usp=sharing",
-    description: "Memble is an app that captures who you truly are now and in the future. Through an iterative process. This app allows users to record themselves, check in with their previous selves, and reflect on how they have grown in an iterative sharable video. Furthermore, it also allows users to save photos/videos to open them up at the end of every year",
-    problemTitle: "Initial Problem",
-    problemText: "Capturing the essence of personal growth alongside preserving photo and video memories poses a significant challenge. It becomes a complex task to visually trace the evolution of one's identity over the years, highlighting the need for an innovative solution that seamlessly integrates the facets of self-discovery and cherished moments. We are also trying to make it so it is not overused or focused on the “social”/”popularity” aspect of modern apps. It focuses solely on capturing one’s growth, day-to-day goals, and impactful memories.",
-    personaImg: MemblePersona
-  },
-  { id: 4,
-    image: Destigma,
-    title: "Destigma",
-    website: "https://docs.google.com/presentation/d/1IZ_sWUXCSRlrvZUgj5QeYpEsaar4eXtb2zJ4ZPr2QPM/edit?usp=sharing",
-    btnName: "Presentation",
-    demo: "https://drive.google.com/file/d/1XiUWioyuJg6TJAtsPGeOXIqEAqnw9RhY/view?usp=sharing",
-    description: "At DESTIGMA, we believe that comprehensive and inclusive sex education is a fundamental human right. Our mission is to provide accessible and empowering resources for people of all genders, sexual orientations, and backgrounds to help them make informed decisions about their sexual health and well-being. We strive to create a safe, sex-positive space that promotes body positivity, consent, and respect for all individuals. By destigmatizing conversations around sex and addressing the gaps in traditional sex education, we aim to empower our community with the knowledge and tools they need to navigate healthy, fulfilling sexual lives.",
-    problemTitle: "Initial Problem",
-    problemText: "The sex ed students receive in schools and from their parents is often abstinence based, cishet normative, otherwise incomplete or even just non-existent.",
-    personaImg: DestigmaPersona
-  },
-  {
-    id: 5,
-    image: UEvent,
-    title: "UEvent",
-    website: "https://docs.google.com/presentation/d/1HCo4aw-wI0puLCiM4D3uZN8co0GVqXRyRNrY8dVQYmg/edit?usp=sharing",
-    btnName: "Presentation",
-    demo: "https://drive.google.com/file/d/1xWjXPk12VLqDejVF4GlYq0p9wtOXUoyd/view?usp=sharing",
-    description: "My and four other friends of mine co-founded this UEvent 2 years ago. This is an event-based app where students can look for all on-campus events or they can post events. There's currently over 1000 donwloads on the App Store with a high rating of 4.8 / 5 stars."
+    routeName : "nasa_suit_challenge",
+    title : "NASA Suit Challenge",
+    image: NASALogo
   }
-]
+];
 
 const Portfolio = () => {
   return (
@@ -80,7 +29,32 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
-        {
+        <div className='portfolio__btns'>
+          <div className='projects'>
+            <h5>Software Projects</h5>
+            <div className='grid__container'>
+              {
+                csProjects.map(({routeName, title, image}) => {
+                  return (
+                    <article key={routeName} className="portfolio__item">
+                      <div className="portfolio__item-img">
+                        <img src={image} alt={title} />
+                      </div>
+                      <h3>{title}</h3>
+                    </article>
+                  )
+                })
+              }
+            </div>
+          </div>
+          <div className='projects'>
+            <h5>UX/UI Projects</h5>
+          </div>
+          <div className='projects'>
+            <h5>Art Projects</h5>
+          </div>
+        </div>
+        {/* {
           data.map(({id, image, title, website, demo, description, btnName, problemTitle, problemText, personaImg}) => {
             return (
               <article key={id} className="portfolio__item">
@@ -115,7 +89,7 @@ const Portfolio = () => {
               </article>
             )
           })
-        }
+        } */}
       </div>
     </section>
   )

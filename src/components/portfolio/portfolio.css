@@ -3,9 +3,8 @@
 }
 
 .portfolio__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .portfolio__item {
@@ -43,6 +42,23 @@
     gap: 1rem;
     justify-content: center;
 }
+
+.portfolio__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.projects {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3fr, 1fr);
+    grid-gap: 20px;
+  }
 
 .popup__container h2 {
     margin-bottom: 1rem;
