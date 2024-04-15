@@ -22,6 +22,24 @@ const csProjects = [
   }
 ];
 
+const uxProjects = [
+  {
+    routeName : "memble",
+    title : "Memble",
+    image: Memble
+  }, 
+  {
+    routeName : "destigma",
+    title : "Destigma",
+    image: Destigma
+  }, 
+  {
+    routeName : "uevent",
+    title : "UEvent",
+    image: UEvent
+  }
+]
+
 const Portfolio = () => {
   return (
     <section id='portfolio'>
@@ -31,7 +49,7 @@ const Portfolio = () => {
       <div className="container portfolio__container">
         <div className='portfolio__btns'>
           <div className='projects'>
-            <h5>Software Projects</h5>
+            <h4 className='project__title'>Software Projects</h4>
             <div className='grid__container'>
               {
                 csProjects.map(({routeName, title, image}) => {
@@ -41,6 +59,7 @@ const Portfolio = () => {
                         <img src={image} alt={title} />
                       </div>
                       <h3>{title}</h3>
+                      <button className='btn btn-primary'>Learn More!</button>
                     </article>
                   )
                 })
@@ -48,10 +67,25 @@ const Portfolio = () => {
             </div>
           </div>
           <div className='projects'>
-            <h5>UX/UI Projects</h5>
+            <h4 className='project__title'>UX/UI Projects</h4>
+            <div className='grid__container'>
+              {
+                uxProjects.map(({routeName, title, image}) => {
+                  return (
+                    <article key={routeName} className="portfolio__item">
+                      <div className="portfolio__item-img">
+                        <img src={image} alt={title} />
+                      </div>
+                      <h3>{title}</h3>
+                      <button className='btn btn-primary'>Learn More!</button>
+                    </article>
+                  )
+                })
+              }
+            </div>
           </div>
           <div className='projects'>
-            <h5>Art Projects</h5>
+            <h4 className='project__title'>Art Projects</h4>
           </div>
         </div>
         {/* {

@@ -5,6 +5,7 @@
 .portfolio__container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .portfolio__item {
@@ -54,11 +55,16 @@
     text-align: center;
 }
 
-.grid-container {
+.project__title {
+    margin: 2rem 0;
+}
+
+.grid__container {
     display: grid;
-    grid-template-columns: repeat(3fr, 1fr);
-    grid-gap: 20px;
-  }
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4rem;
+    justify-content: center;
+}
 
 .popup__container h2 {
     margin-bottom: 1rem;
