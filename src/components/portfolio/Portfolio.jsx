@@ -8,6 +8,10 @@ import Memble from '../../assets/memble_mockup.png'
 import Destigma from '../../assets/destigma_mockup.png'
 import DestigmaPersona from '../../assets/destigma_persona.png'
 import UEvent from '../../assets/Uevent.png'
+import DigitalDrawing from '../../assets/digital_draw_cover.jpg'
+import PhysicalDrawing from '../../assets/physical_draw_cover.jpg'
+import ThreeDModel from '../../assets/3d_cover.png'
+import GraphicDesign from '../../assets/graphic_design_cover.png'
 
 const csProjects = [
   {
@@ -38,7 +42,30 @@ const uxProjects = [
     title : "UEvent",
     image: UEvent
   }
-]
+];
+
+const artProjects = [
+  {
+    routeName : "digital_drawings",
+    title : "Digital Drawings",
+    image: DigitalDrawing
+  }, 
+  {
+    routeName : "physical_drawings",
+    title : "Sketches/Paintings",
+    image: PhysicalDrawing
+  }, 
+  {
+    routeName : "3d_modeling",
+    title : "3D Modeling",
+    image: ThreeDModel
+  },
+  {
+    routeName : "graphic_design",
+    title : "Graphic Design",
+    image: GraphicDesign
+  }
+];
 
 const Portfolio = () => {
   return (
@@ -86,6 +113,21 @@ const Portfolio = () => {
           </div>
           <div className='projects'>
             <h4 className='project__title'>Art Projects</h4>
+            <div className='grid__container'>
+              {
+                artProjects.map(({routeName, title, image}) => {
+                  return (
+                    <article key={routeName} className="portfolio__item">
+                      <div className="portfolio__item-img">
+                        <img src={image} alt={title} />
+                      </div>
+                      <h3>{title}</h3>
+                      <button className='btn btn-primary'>Learn More!</button>
+                    </article>
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
         {/* {
