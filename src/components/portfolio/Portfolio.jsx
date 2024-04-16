@@ -1,5 +1,6 @@
 import React from 'react'
 import './portfolio.css'
+import { Link } from 'react-router-dom';
 import Popup from 'reactjs-popup';
 import PersonalWebsite from '../../assets/website_pic.png'
 import NASALogo from '../../assets/nasa-logo.png'
@@ -86,7 +87,7 @@ const Portfolio = () => {
                         <img src={image} alt={title} />
                       </div>
                       <h3>{title}</h3>
-                      <button className='btn btn-primary'>Learn More!</button>
+                      <Link key={routeName} to={`portfolio/cs/${routeName}`}>                      <button className='btn btn-primary'>Learn More!</button></Link>
                     </article>
                   )
                 })

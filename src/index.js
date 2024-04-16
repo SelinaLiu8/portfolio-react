@@ -2,8 +2,7 @@ import React, { useEffect } from 'react';
 import ReactDOM from 'react-dom'
 import { createBrowserRouter, RouterProvider, BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import App from './App'
-import Nasa from "./components/projects/NASA/Nasa"
-import Home from './pages/Home'
+import CSProjects from './components/projects/CSProjects'
 import './index.css'
 import { ThemeProvider, useTheme } from './components/ThemeContext'; 
 
@@ -34,8 +33,12 @@ const AppWrapper = () => {
     return null;
 };
 
-const currentPath = window.location.pathname;
-const basePath = currentPath.substring(0, currentPath.lastIndexOf('/'));
+// basePath is always changing
+
+// const currentPath = window.location.pathname;
+const basePath = '/portfolio-react';
+
+console.log("base path: " + basePath);
 
 const router = createBrowserRouter([
     {
@@ -43,8 +46,8 @@ const router = createBrowserRouter([
         element : <App />,
     },
     {
-        path : basePath + "/portfolio/nasa",
-        element : <Nasa />
+        path : basePath + "/portfolio/cs/:name",
+        element : <CSProjects />
     }
 ]);
 

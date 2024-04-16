@@ -1,0 +1,17 @@
+.cs_project_top_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    height: 20%;
+}
+
+.cs_project_top_image {
+    max-height: 15rem;
+    width: 100vw;
+}
+
+.project_description {
+    display: flex;
+    flex-direction: column;
+}
