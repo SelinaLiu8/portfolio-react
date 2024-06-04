@@ -1,14 +1,27 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import PersonalWebsite from '../../assets/website_pic.png';
+import Memble from '../../assets/memble_mockup.png';
+import MembleImg from '../../assets/memble_img.png'
 import NASA from '../../assets/nasa-logo.png';
 import './project.css'
 
 const projects = [
     {
         param: "memble",
-        image: PersonalWebsite,
-        title: "Memble"
+        image: Memble,
+        title: "Memble",
+        project_img: MembleImg,
+        project_description: "Memble is an app that captures who you truly are now and in the future. Through an iterative process. This app allows users to record themselves, check in with their previous selves, and reflect on how they have grown in an iterative sharable video. Furthermore, it also allows users to save photos/videos to open them up at the end of every year.",
+        duration: "3 months",
+        tool: "Figma, Canva",
+        context: "Capturing the essence of personal growth alongside preserving photo and video memories poses a significant challenge. It becomes a complex task to visually trace the evolution of one's identity over the years, highlighting the need for an innovative solution that seamlessly integrates the facets of self-discovery and cherished moments. We are also trying to make it so it is not overused or focused on the “social”/”popularity” aspect of modern apps. It focuses solely on capturing one’s growth, day-to-day goals, and impactful memories.",
+        processes: [
+            "Brainstorm",
+            "Research",
+            "Persona",
+            "Design",
+            "Testing"
+        ]
     },
     {
         param: "destigma",
@@ -29,26 +42,51 @@ const UXProjects = () => {
     console.log(params);
     const project = projects.find(proj => proj.param === params.name);
     console.log(project);
-    const { image, title, project_description } = project || {}; // Destructure image from the project object, default to an empty object if project is not found
+    const { image, title, project_description, duration, tool, context, processes } = project || {}; // Destructure image from the project object, default to an empty object if project is not found
 
     return (
-        <div className='csProject_container container'>
-            <div className='cs_project_top_container'>
-                <img src={image} className='cs_project_top_image' alt={title} />
+        <div className='project_container container'>
+            <div className='project_top_container'>
+                <img src={image} className='project_top_image' alt={title} />
                 <h1>{title}</h1>
             </div>
             <section className='project_description'>
                 <h5>What is it</h5>
                 <h2>Project Description</h2>
-                <p>{project_description}</p>
+                <div className="description__container">
+                    <div className='description-img-bg'>
+                        <div className="description-image">
+                            <img className="description-image-img" src={MembleImg} alt="Memble Image" />
+                        </div>
+                    </div>
+                    <div>
+                        <p className='description__text'>{project_description}</p>
+                        <article className="description__card">
+                            <p>Duration: {duration}</p>
+                            <p>Tools: {tool}</p>
+                    </article>
+                    </div>
+                </div>
             </section>
             <section className='project_description'>
-                <h5>What I did</h5>
-                <h2>My Role</h2>
+                <h5>Purpose of this project</h5>
+                <h2>Context</h2>
+                <p>{context}</p>
             </section>
             <section className='project_description'>
-                <h5>The finish project</h5>
-                <h2>Result</h2>
+                <h5>The process</h5>
+                <h2>Steps</h2>
+                <div className="process__circles">
+                    {processes && (
+                        <div className="process__row">
+                            {processes.map((process, index) => (
+                                <div key={index} className="process__step">
+                                    <p>{process}</p>
+                                </div>
+                                ))}
+                            </div>
+                        )}
+                </div>
             </section>
         </div>
     );

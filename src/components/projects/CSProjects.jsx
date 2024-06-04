@@ -26,9 +26,9 @@ const CSProjects = () => {
     const { image, title, project_description } = project || {}; // Destructure image from the project object, default to an empty object if project is not found
 
     return (
-        <div className='csProject_container container'>
-            <div className='cs_project_top_container'>
-                <img src={image} className='cs_project_top_image' alt={title} />
+        <div className='project_container container'>
+            <div className='project_top_container'>
+                <img src={image} className='project_top_image' alt={title} />
                 <h1>{title}</h1>
             </div>
             <section className='project_description'>
