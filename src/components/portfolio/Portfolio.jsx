@@ -87,7 +87,9 @@ const Portfolio = () => {
                         <img src={image} alt={title} />
                       </div>
                       <h3>{title}</h3>
-                      <Link key={routeName} to={`portfolio/cs/${routeName}`}>                      <button className='btn btn-primary'>Learn More!</button></Link>
+                      <Link key={routeName} to={`portfolio/cs/${routeName}`}>
+                        <button className='btn btn-primary'>Learn More!</button>
+                      </Link>
                     </article>
                   )
                 })
@@ -105,7 +107,9 @@ const Portfolio = () => {
                         <img src={image} alt={title} />
                       </div>
                       <h3>{title}</h3>
-                      <button className='btn btn-primary'>Learn More!</button>
+                      <Link key={routeName} to={`portfolio/ux/${routeName}`}>
+                        <button className='btn btn-primary'>Learn More!</button>
+                      </Link>
                     </article>
                   )
                 })
