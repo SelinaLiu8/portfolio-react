@@ -14,14 +14,20 @@ const projects = [
         project_description: "Memble is an app that captures who you truly are now and in the future. Through an iterative process. This app allows users to record themselves, check in with their previous selves, and reflect on how they have grown in an iterative sharable video. Furthermore, it also allows users to save photos/videos to open them up at the end of every year.",
         duration: "3 months",
         tool: "Figma, Canva",
-        context: "Capturing the essence of personal growth alongside preserving photo and video memories poses a significant challenge. It becomes a complex task to visually trace the evolution of one's identity over the years, highlighting the need for an innovative solution that seamlessly integrates the facets of self-discovery and cherished moments. We are also trying to make it so it is not overused or focused on the “social”/”popularity” aspect of modern apps. It focuses solely on capturing one’s growth, day-to-day goals, and impactful memories.",
+        context: "We wanted to create an photo app that would capture personal growth for our semeter long Interactive Design course. Memble aims to capture photo/video memories to record personal growth. At the same time, Memble also allows users to save and lock up important memories to look back on in the future.",
         processes: [
-            "Brainstorm",
+            "Define",
             "Research",
             "Persona",
             "Design",
             "Testing"
+        ],
+        define: [
+            {
+                problem: "Capturing the essence of personal growth alongside preserving photo and video memories poses a significant challenge. It becomes a complex task to visually trace the evolution of one's identity over the years, highlighting the need for an innovative solution that seamlessly integrates the facets of self-discovery and cherished moments. We are also trying to make it so it is not overused or focused on the “social”/”popularity” aspect of modern apps. It focuses solely on capturing one’s growth, day-to-day goals, and impactful memories."
+            }
         ]
+        
     },
     {
         param: "destigma",
@@ -42,7 +48,16 @@ const UXProjects = () => {
     console.log(params);
     const project = projects.find(proj => proj.param === params.name);
     console.log(project);
-    const { image, title, project_description, duration, tool, context, processes } = project || {}; // Destructure image from the project object, default to an empty object if project is not found
+    const { 
+        image, 
+        title, 
+        project_description, 
+        duration, 
+        tool, 
+        context, 
+        processes,
+        define 
+    } = project || {}; // Destructure image from the project object, default to an empty object if project is not found
 
     return (
         <div className='project_container container'>
@@ -88,6 +103,19 @@ const UXProjects = () => {
                         )}
                 </div>
             </section>
+            { define && (
+                <section className='project_description'>
+                    <h5>Initial problems</h5>
+                    <h2>Define</h2>
+                    {define.map((d, index) => (
+                        <div className='define__container'>
+                            <h3>Problem</h3>
+                            <p>{d.problem}</p>
+                        </div>
+                    ))}
+                
+                </section>
+            )}
         </div>
     );
 };
