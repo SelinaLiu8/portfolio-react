@@ -5,6 +5,7 @@ import App from './App'
 import CSProjects from './components/projects/CSProjects'
 import './index.css'
 import { ThemeProvider, useTheme } from './components/ThemeContext'; 
+import UXProjects from './components/projects/UXProjects';
 
 const AppWrapper = () => {
 
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
     {
         path : basePath + "/portfolio/cs/:name",
         element : <CSProjects />
+    },
+    {
+        path : basePath + "/portfolio/ux/:name",
+        element : <UXProjects />
     }
 ]);
 
