@@ -77,6 +77,7 @@
     display: flex;
     gap: 5rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .process__step {
@@ -102,4 +103,23 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.define__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.persona_img {
+    border-radius: 3rem;
+    border: transparent 3px solid;
+    transition: var(--transition);
+    z-index: 2;
+}
+
+.persona_img:hover {
+    transform: var(--transition);
+    border: var(--color-primary) 3px solid;
+    /* transform: translateX(20px); */
 }

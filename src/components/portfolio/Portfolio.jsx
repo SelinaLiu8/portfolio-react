@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import Popup from 'reactjs-popup';
 import PersonalWebsite from '../../assets/website_pic.png'
 import NASALogo from '../../assets/nasa-logo.png'
-import MemblePersona from '../../assets/memble-persona.jpg'
-import Memble from '../../assets/memble_mockup.png'
+import Memble from '../../assets/memble/memble_mockup.png'
 import Destigma from '../../assets/destigma_mockup.png'
 import DestigmaPersona from '../../assets/destigma_persona.png'
 import UEvent from '../../assets/Uevent.png'

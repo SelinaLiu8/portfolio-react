@@ -6,6 +6,8 @@ import CSProjects from './components/projects/CSProjects'
 import './index.css'
 import { ThemeProvider, useTheme } from './components/ThemeContext'; 
 import UXProjects from './components/projects/UXProjects';
+import Footer from './components/footer/Footer';
+import Nav from './components/nav/Nav';
 
 const AppWrapper = () => {
 
@@ -34,6 +36,17 @@ const AppWrapper = () => {
     return null;
 };
 
+const withFooter = (Component) => {
+    return (props) => (
+        <>
+        {/* need to fix nav to use absolute path */}
+            <Nav/>
+            <Component {...props} />
+            <Footer />
+        </>
+    );
+};
+
 // basePath is always changing
 
 // const currentPath = window.location.pathname;
@@ -48,11 +61,11 @@ const router = createBrowserRouter([
     },
     {
         path : basePath + "/portfolio/cs/:name",
-        element : <CSProjects />
+        element : React.createElement(withFooter(CSProjects))
     },
     {
         path : basePath + "/portfolio/ux/:name",
-        element : <UXProjects />
+        element : React.createElement(withFooter(UXProjects)),
     }
 ]);
 
