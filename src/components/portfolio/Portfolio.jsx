@@ -33,8 +33,8 @@ const uxProjects = [
     image: Memble
   }, 
   {
-    routeName : "destigma",
-    title : "Destigma",
+    routeName : "thought_lake",
+    title : "Thought_Lake",
     image: Destigma
   }, 
   {

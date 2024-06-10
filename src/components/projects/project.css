@@ -123,3 +123,17 @@
     border: var(--color-primary) 3px solid;
     /* transform: translateX(20px); */
 }
+
+.wireframe__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+/* .wireframe_img {
+
+} */
+
+.promo_vid {
+    width: 100%;
+}

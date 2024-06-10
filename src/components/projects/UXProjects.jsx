@@ -13,6 +13,10 @@ import MembleWireframe6 from '../../assets/memble/wireframe/11.jpg'
 import MembleWireframe7 from '../../assets/memble/wireframe/12.jpg'
 import MembleWireframe8 from '../../assets/memble/wireframe/13.jpg'
 import MembleWireframe9 from '../../assets/memble/wireframe/14.jpg'
+import MembleVideo from '../../assets/memble/Memble_Ad_Final.mp4'
+import MembleFinal1 from '../../assets/memble/High-fidelity/Time_Capsule(Locked).png'
+import MembleFinal2 from '../../assets/memble/High-fidelity/Time_Capsule(Pre-record).png'
+import MembleFinal3 from '../../assets/memble/High-fidelity/Time_Capsule(Post-record).png'
 import './project.css'
 
 const projects = [
@@ -45,7 +49,7 @@ const projects = [
                 research_results: "The Memory Ward conducted extensive research, gathering insights from personal inventory assessments, foreign correspondents, and scenario-based interviews, revealing both positive and negative sentiments among users. Notably, frequent Snapchat users such as Thaslimah, Tayyiba, and Abby appreciated features like the flashback tool and private story sharing, yet expressed frustration over excessive updates. Conversely, users like Tanjina from Bangladesh sought a platform with similar functionalities to Snapchat but tailored to their region's preferences. Users across categories expressed desires for apps that track personal growth, protect memories, and integrate seamlessly into their busy schedules, emphasizing simplicity and organization. Tanjina's perspective underscored a cultural preference for functionality over aesthetics. Ultimately, users prioritize apps that preserve a wide range of moments while respecting privacy and minimizing storage usage."
             }
         ],
-        persona: [
+        define: [
             MemblePersona
         ],
         wireframe: [
@@ -58,13 +62,41 @@ const projects = [
             MembleWireframe7,
             MembleWireframe8,
             MembleWireframe9
+        ],
+        final: [
+            {
+                promo_video: MembleVideo,
+                final_img1: MembleFinal1,
+                final_img2: MembleFinal2,
+                final_img3: MembleFinal3
+            }
         ]
     },
     {
-        param: "destigma",
+        param: "thought_lake",
         image: NASA,
-        title: "Destigma",
-        project_description: "The University of Michigan’s CLAWS (Collaborative Lab For Advancing Work in Space) Team is a multi-disciplinary group of undergraduate and graduate students that has competed in the NASA SUITS Challenge since 2018. CLAWS consists of 60 students from a broad set of majors working on research, design, business, and development for space exploration.\nWe have been working on the NASA Suit Challenge for the past 3 years. We develop softwares consist of AR techonologies, AI models, web sockets, and more. We also develop hardware products."
+        title: "Thought Lake",
+        project_description: "The product I’m researching is called Thought Lake, this is a product I want to make for an UX class research project. The main purpose of this product is for users to have a platform where they can share any thoughts they have. I want this platform to be therapeutic, I want this to be a place where users can find some conforms through sharing about their stressful days.",
+        duration: "3 months",
+        tool: "Figma, Miro",
+        context: "I’ve recently been feeling really stressed, and scheduling therapy sessions always takes so long and it’s not immediate. Therefore, I thought of an idea for a mobile app where you can chat with strangers and therapists. The overall objective of this research is to validate this app and see whether this is something that will be useful to people.",
+        processes: [
+            "1. Empathise",
+            "2. Define",
+            "3. Wrap-Up",
+        ],
+        challenge: [
+            {
+                users: "I want the users to be people who are looking for a safe spot to share their thoughts, especially if they are struggling with some aspects of their lives or feel like they are not ready to share something with the people around them."
+            }
+        ],
+        research: [
+            {
+                research_types: "Personal Inventory, foreign correspondents, scenerios",
+                research_results: "The Memory Ward conducted extensive research, gathering insights from personal inventory assessments, foreign correspondents, and scenario-based interviews, revealing both positive and negative sentiments among users. Notably, frequent Snapchat users such as Thaslimah, Tayyiba, and Abby appreciated features like the flashback tool and private story sharing, yet expressed frustration over excessive updates. Conversely, users like Tanjina from Bangladesh sought a platform with similar functionalities to Snapchat but tailored to their region's preferences. Users across categories expressed desires for apps that track personal growth, protect memories, and integrate seamlessly into their busy schedules, emphasizing simplicity and organization. Tanjina's perspective underscored a cultural preference for functionality over aesthetics. Ultimately, users prioritize apps that preserve a wide range of moments while respecting privacy and minimizing storage usage."
+            }
+        ],
+
     },
     {
         param: "uevent",
@@ -89,8 +121,9 @@ const UXProjects = () => {
         processes,
         challenge,
         research,
-        persona,
-        wireframe
+        define,
+        wireframe,
+        final
     } = project || {}; // Destructure image from the project object, default to an empty object if project is not found
 
     return (
@@ -167,11 +200,11 @@ const UXProjects = () => {
                 
                 </section>
             )}
-            { persona && (
+            { define && (
                 <section className='project_description'>
-                    <h5>User personas</h5>
-                    <h2>Persona</h2>
-                    {persona.map((p, index) => (
+                    <h5>User personas and journey map</h5>
+                    <h2>Define</h2>
+                    {define.map((p, index) => (
                         <div key={index} className='define__container'>
                             <img src={p} alt="persona" className='persona_img'/>
                         </div>
@@ -183,9 +216,28 @@ const UXProjects = () => {
                 <section className='project_description'>
                     <h5>Low-fidelity design</h5>
                     <h2>Wireframe</h2>
-                    {wireframe.map((w, index) => (
+                    <div className='wireframe__container'>
+                        {wireframe.map((w, index) => (
+                            <div key={index} className='define__container'>
+                                <img src={w} alt="wireframe" className='wireframe_img'/>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            )}
+            { final && (
+                <section className='project_description'>
+                    <h5>High-fidelity design</h5>
+                    <h2>Final Product</h2>
+                    {final.map((f, index) => (
                         <div key={index} className='define__container'>
-                            <img src={w} alt="wireframe" className='persona_img'/>
+                            <div className='final_vid__container'>
+                                <h3>Promo Video</h3>
+                                <video className='promo_vid' controls>
+                                    <source src={f.promo_video} type="video/mp4" />
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
                     ))}
                 
