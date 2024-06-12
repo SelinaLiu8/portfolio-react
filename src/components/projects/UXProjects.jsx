@@ -19,6 +19,9 @@ import MembleFinal2 from '../../assets/memble/High-fidelity/Time_Capsule(Pre-rec
 import MembleFinal3 from '../../assets/memble/High-fidelity/Time_Capsule(Post-record).png'
 import './project.css'
 
+import ThoughtLake from '../../assets/thought_lake/ThoughtLake_title.png'
+import ThoughtLakeImg from '../../assets/thought_lake/Thought_lake_square.png'
+
 const projects = [
     {
         param: "memble",
@@ -46,7 +49,7 @@ const projects = [
         research: [
             {
                 research_types: "Personal Inventory, foreign correspondents, scenerios",
-                research_results: "The Memory Ward conducted extensive research, gathering insights from personal inventory assessments, foreign correspondents, and scenario-based interviews, revealing both positive and negative sentiments among users. Notably, frequent Snapchat users such as Thaslimah, Tayyiba, and Abby appreciated features like the flashback tool and private story sharing, yet expressed frustration over excessive updates. Conversely, users like Tanjina from Bangladesh sought a platform with similar functionalities to Snapchat but tailored to their region's preferences. Users across categories expressed desires for apps that track personal growth, protect memories, and integrate seamlessly into their busy schedules, emphasizing simplicity and organization. Tanjina's perspective underscored a cultural preference for functionality over aesthetics. Ultimately, users prioritize apps that preserve a wide range of moments while respecting privacy and minimizing storage usage."
+                primary_research: "The Memory Ward conducted extensive research, gathering insights from personal inventory assessments, foreign correspondents, and scenario-based interviews, revealing both positive and negative sentiments among users. Notably, frequent Snapchat users such as Thaslimah, Tayyiba, and Abby appreciated features like the flashback tool and private story sharing, yet expressed frustration over excessive updates. Conversely, users like Tanjina from Bangladesh sought a platform with similar functionalities to Snapchat but tailored to their region's preferences. Users across categories expressed desires for apps that track personal growth, protect memories, and integrate seamlessly into their busy schedules, emphasizing simplicity and organization. Tanjina's perspective underscored a cultural preference for functionality over aesthetics. Ultimately, users prioritize apps that preserve a wide range of moments while respecting privacy and minimizing storage usage."
             }
         ],
         define: [
@@ -74,16 +77,18 @@ const projects = [
     },
     {
         param: "thought_lake",
-        image: NASA,
+        image: ThoughtLake,
         title: "Thought Lake",
+        project_img: ThoughtLakeImg,
         project_description: "The product I’m researching is called Thought Lake, this is a product I want to make for an UX class research project. The main purpose of this product is for users to have a platform where they can share any thoughts they have. I want this platform to be therapeutic, I want this to be a place where users can find some conforms through sharing about their stressful days.",
         duration: "3 months",
         tool: "Figma, Miro",
         context: "I’ve recently been feeling really stressed, and scheduling therapy sessions always takes so long and it’s not immediate. Therefore, I thought of an idea for a mobile app where you can chat with strangers and therapists. The overall objective of this research is to validate this app and see whether this is something that will be useful to people.",
         processes: [
-            "1. Empathise",
-            "2. Define",
-            "3. Wrap-Up",
+            "1. Challenge",
+            "2. Research",
+            "3. Define",
+            "4. Wrap-up"
         ],
         challenge: [
             {
@@ -92,8 +97,9 @@ const projects = [
         ],
         research: [
             {
-                research_types: "Personal Inventory, foreign correspondents, scenerios",
-                research_results: "The Memory Ward conducted extensive research, gathering insights from personal inventory assessments, foreign correspondents, and scenario-based interviews, revealing both positive and negative sentiments among users. Notably, frequent Snapchat users such as Thaslimah, Tayyiba, and Abby appreciated features like the flashback tool and private story sharing, yet expressed frustration over excessive updates. Conversely, users like Tanjina from Bangladesh sought a platform with similar functionalities to Snapchat but tailored to their region's preferences. Users across categories expressed desires for apps that track personal growth, protect memories, and integrate seamlessly into their busy schedules, emphasizing simplicity and organization. Tanjina's perspective underscored a cultural preference for functionality over aesthetics. Ultimately, users prioritize apps that preserve a wide range of moments while respecting privacy and minimizing storage usage."
+                research_types: "User interviews, mapping activity",
+                primary_research: "I recruited 5 participants within my inclusion and exclusion criteria. All of them are between the ages of 20 - 25. Each participant showed some signs of experiencing stress which I think was helpful to the interview. My interviews covered a variety of topics ranging from different types of stress experienced, to methods to relieve stress, to people that help with stress, to other apps that help with stress, to opinions on Thought Lake. I chose the mapping activity to go along with the interviews because I think this is the best way to see how interviewees feel when they are in a stressful situation. Furthermore, I want them to sketch out a timeline of what happens when they need to seek help for their mental health. Having the interviewees actually sketch would help them refine their timelines. Sometimes, it's easier to leave things out when you’re just talking about it. I want to use this activity to see exactly which steps the interviewees find most difficult when seeking mental health help.",
+                secondary_research: "My research shows that it is very beneficial for people to be able to talk about their problems anonymously. Also without being anonymous online, it creates a safe space where people have the freedom to share their thoughts without feeling judged. Users will use this product when they are feeling overwhelmed or stressed and really need a place to vent. Their goal in this context is to be able to share some of the thoughts that are overwhelming them in a safe place, these can be accomplished by creating an anonymous community where people are able to share their feelings without being judged."
             }
         ],
 
@@ -114,6 +120,7 @@ const UXProjects = () => {
     const { 
         image, 
         title, 
+        project_img,
         project_description, 
         duration, 
         tool, 
@@ -138,7 +145,7 @@ const UXProjects = () => {
                 <div className="description__container">
                     <div className='description-img-bg'>
                         <div className="description-image">
-                            <img className="description-image-img" src={MembleImg} alt="Memble Image" />
+                            <img className="description-image-img" src={project_img} alt="Memble Image" />
                         </div>
                     </div>
                     <div>
@@ -193,8 +200,14 @@ const UXProjects = () => {
                         <div key={index} className='define__container'>
                             <h3>Research Methods</h3>
                             <p>{r.research_types}</p>
-                            <h3>Research Results</h3>
-                            <p>{r.research_results}</p>
+                            <h3>Primary Research</h3>
+                            <p>{r.primary_research}</p>
+                            { r.secondary_research && (
+                                <div>
+                                    <h3>Secondary Research</h3>
+                                    <p>{r.secondary_research}</p>
+                                </div>
+                            )}
                         </div>
                     ))}
                 

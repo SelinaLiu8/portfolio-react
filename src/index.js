@@ -6,6 +6,7 @@ import CSProjects from './components/projects/CSProjects'
 import './index.css'
 import { ThemeProvider, useTheme } from './components/ThemeContext'; 
 import UXProjects from './components/projects/UXProjects';
+import ArtProjects from './components/projects/ArtProjects';
 import Footer from './components/footer/Footer';
 import Nav from './components/nav/Nav';
 
@@ -66,6 +67,10 @@ const router = createBrowserRouter([
     {
         path : basePath + "/portfolio/ux/:name",
         element : React.createElement(withFooter(UXProjects)),
+    },
+    {
+        path : basePath + "/portfolio/art/:name",
+        element : React.createElement(withFooter(ArtProjects)),
     }
 ]);
 

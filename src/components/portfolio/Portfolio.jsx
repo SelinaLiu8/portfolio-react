@@ -7,6 +7,7 @@ import NASALogo from '../../assets/nasa-logo.png'
 import Memble from '../../assets/memble/memble_mockup.png'
 import Destigma from '../../assets/destigma_mockup.png'
 import DestigmaPersona from '../../assets/destigma_persona.png'
+import ThoughtLake from '../../assets/thought_lake/Thought_lake_square.png'
 import UEvent from '../../assets/Uevent.png'
 import DigitalDrawing from '../../assets/digital_draw_cover.jpg'
 import PhysicalDrawing from '../../assets/physical_draw_cover.jpg'
@@ -35,7 +36,7 @@ const uxProjects = [
   {
     routeName : "thought_lake",
     title : "Thought_Lake",
-    image: Destigma
+    image: ThoughtLake
   }, 
   {
     routeName : "uevent",
@@ -126,7 +127,9 @@ const Portfolio = () => {
                         <img src={image} alt={title} />
                       </div>
                       <h3>{title}</h3>
-                      <button className='btn btn-primary'>Learn More!</button>
+                      <Link key={routeName} to={`portfolio/art/${routeName}`}>
+                        <button className='btn btn-primary'>Learn More!</button>
+                      </Link>
                     </article>
                   )
                 })

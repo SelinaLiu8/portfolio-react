@@ -137,3 +137,8 @@
 .promo_vid {
     width: 100%;
 }
+
+.description-image-img {
+    height: 100%;
+    object-fit: cover;
+}
