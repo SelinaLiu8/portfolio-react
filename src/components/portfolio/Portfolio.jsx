@@ -58,7 +58,7 @@ const artProjects = [
   }, 
   {
     routeName : "3d_modeling",
-    title : "3D Modeling",
+    title : "3D Modeling/Product Design",
     image: ThreeDModel
   },
   {

@@ -10,6 +10,39 @@ import DA4 from '../../assets/digital_drawings/purple_dress.png'
 import DA5 from '../../assets/digital_drawings/vampire_final.jpg'
 import DA6 from '../../assets/digital_drawings/red_hair.JPG'
 import DA7 from '../../assets/digital_drawings/green_hair.PNG'
+import DA8 from '../../assets/digital_drawings/avatar_sokka.JPG'
+import DA9 from '../../assets/digital_drawings/IMG_0277.JPG'
+
+import PA1 from '../../assets/physical_drawings/cloud.jpg'
+import PA2 from '../../assets/physical_drawings/david.jpg'
+import PA3 from '../../assets/physical_drawings/painting1.jpg'
+import PA4 from '../../assets/physical_drawings/painting2.jpg'
+import PA5 from '../../assets/physical_drawings/painting3.jpg'
+import PA6 from '../../assets/physical_drawings/still_life1.jpg'
+import PA7 from '../../assets/physical_drawings/still_life2.jpg'
+
+import TD1 from '../../assets/3d/meat_final1.png'
+import TD2 from '../../assets/3d/meat_final2.png'
+import TD3 from '../../assets/3d/meat_final3.png'
+import TD4 from '../../assets/3d/meat1.png'
+import TD5 from '../../assets/3d/meat2.png'
+import TD6 from '../../assets/3d/meat3.png'
+import TD7 from '../../assets/3d/earbuds1.png'
+import TD8 from '../../assets/3d/earbuds2.png'
+import TD9 from '../../assets/3d/earbuds3.png'
+import TD10 from '../../assets/3d/earbuds4.png'
+import TD11 from '../../assets/3d/ring2.png'
+import TD12 from '../../assets/3d/ring1.png'
+import TD13 from '../../assets/3d/ring3.png'
+import TD14 from '../../assets/3d/ring4.png'
+import TD15 from '../../assets/3d/Couch1_final.jpg'
+import TD16 from '../../assets/3d/Couch2_final.png'
+import TD17 from '../../assets/3d/Couch3_final.jpg'
+
+import GD1 from '../../assets/graphic_design/asagumo.png'
+import GD2 from '../../assets/graphic_design/poker club logo with background.png'
+import GD3 from '../../assets/graphic_design/poker club logo.png'
+import GD4 from '../../assets/graphic_design/poker logo 2.png'
 
 const projects = [
     {
@@ -22,24 +55,56 @@ const projects = [
             DA4,
             DA5,
             DA6,
-            DA7
+            DA7,
+            DA8,
+            DA9
         ]
     },
     {
         param: "physical_drawings",
         title: "NASA Suit Challenge",
         imgs: [
-            
+            PA1,
+            PA2,
+            PA3,
+            PA4,
+            PA5,
+            PA6,
+            PA7
         ]
     },
     {
         param: "3d_modeling",
-        title: "Personal Portfolio Website"
+        title: "Personal Portfolio Website",
+        imgs: [
+            TD1,
+            TD2,
+            TD3,
+            TD4,
+            TD5,
+            TD6,
+            TD7,
+            TD8,
+            TD9,
+            TD10,
+            TD11,
+            TD12,
+            TD13,
+            TD14,
+            TD15,
+            TD16,
+            TD17
+        ]
     },
     {
         param: "graphic_design",
         title: "NASA Suit Challenge",
-        project_description: "The University of Michigan’s CLAWS (Collaborative Lab For Advancing Work in Space) Team is a multi-disciplinary group of undergraduate and graduate students that has competed in the NASA SUITS Challenge since 2018. CLAWS consists of 60 students from a broad set of majors working on research, design, business, and development for space exploration.\nWe have been working on the NASA Suit Challenge for the past 3 years. We develop softwares consist of AR techonologies, AI models, web sockets, and more. We also develop hardware products."
+        imgs: [
+            GD1,
+            GD2,
+            GD3,
+            GD4
+        ]
     }, 
 ];
 
