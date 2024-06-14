@@ -116,12 +116,18 @@
     border: transparent 3px solid;
     transition: var(--transition);
     z-index: 2;
+    margin-bottom: 2rem;
 }
 
 .persona_img:hover {
     transform: var(--transition);
     border: var(--color-primary) 3px solid;
     /* transform: translateX(20px); */
+}
+
+.persona__container {
+    display: flex;
+    gap: 2rem;
 }
 
 .wireframe__container {

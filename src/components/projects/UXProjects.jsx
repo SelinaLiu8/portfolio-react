@@ -21,6 +21,8 @@ import './project.css'
 
 import ThoughtLake from '../../assets/thought_lake/ThoughtLake_title.png'
 import ThoughtLakeImg from '../../assets/thought_lake/Thought_lake_square.png'
+import ThoughtLakePersona from '../../assets/thought_lake/UX Persona.png'
+import ThoughtLakeJounelMap from '../../assets/thought_lake/User Journey Map.jpg'
 
 const projects = [
     {
@@ -102,7 +104,10 @@ const projects = [
                 secondary_research: "My research shows that it is very beneficial for people to be able to talk about their problems anonymously. Also without being anonymous online, it creates a safe space where people have the freedom to share their thoughts without feeling judged. Users will use this product when they are feeling overwhelmed or stressed and really need a place to vent. Their goal in this context is to be able to share some of the thoughts that are overwhelming them in a safe place, these can be accomplished by creating an anonymous community where people are able to share their feelings without being judged."
             }
         ],
-
+        define: [
+            ThoughtLakePersona,
+            ThoughtLakeJounelMap
+        ]
     },
     {
         param: "uevent",
