@@ -258,10 +258,6 @@ const UXProjects = () => {
                         <div key={index} className='define__container'>
                             <div className='final_vid__container'>
                                 <h3>Promo Video</h3>
-                                <video className='promo_vid' controls>
-                                    <source src={f.promo_video} type="video/mp4" />
-                                    Your browser does not support the video tag.
-                                </video>
                             </div>
                         </div>
                     ))}
