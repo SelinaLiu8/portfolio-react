@@ -13,7 +13,6 @@ import MembleWireframe6 from '../../assets/memble/wireframe/11.jpg'
 import MembleWireframe7 from '../../assets/memble/wireframe/12.jpg'
 import MembleWireframe8 from '../../assets/memble/wireframe/13.jpg'
 import MembleWireframe9 from '../../assets/memble/wireframe/14.jpg'
-import MembleVideo from '../../assets/memble/Memble_Ad_Final.mp4'
 import MembleFinal1 from '../../assets/memble/High-fidelity/Time_Capsule(Locked).png'
 import MembleFinal2 from '../../assets/memble/High-fidelity/Time_Capsule(Pre-record).png'
 import MembleFinal3 from '../../assets/memble/High-fidelity/Time_Capsule(Post-record).png'
@@ -70,7 +69,6 @@ const projects = [
         ],
         final: [
             {
-                promo_video: MembleVideo,
                 final_img1: MembleFinal1,
                 final_img2: MembleFinal2,
                 final_img3: MembleFinal3
