@@ -75,7 +75,7 @@ const projects = [
                 final_img2: MembleFinal2,
                 final_img3: MembleFinal3
             }
-        ]
+        ],
     },
     {
         param: "thought_lake",
@@ -107,6 +107,12 @@ const projects = [
         define: [
             ThoughtLakePersona,
             ThoughtLakeJounelMap
+        ],
+        wrap: [
+            {
+                research_limitation: "Most of the interview participants are within the same age group, therefore, my research did not cover younger audience and older audience. Some contexts I didn’t cover are how are therapists going to be paid, what happens if people receive negative comments, and how different posts can affect other people. A bias that was hard to avoid was giving too much context on my part. Since this is a product that currently doesn’t exist, I wanted to provide as much context as I can so the participants have a good understanding of the product. But it was hard to determine how much context was too much or too little. If I were to continue with this research, I would make a basic prototype of the product and run user testing on it, so I can get more solid data on Thought Lake.",
+                reflection: "Overall, I’m satisfied with this case study as it is one of my first UX research project. I’ve really learned the depth of UX research and how important each steps are. I think there are still a lot of areas for improvements in my future UX research projects, but I’m ready to face the challenges. Thank you for taking your time to read my case study! If you have any questions or suggestions please reach out to me!"
+            }
         ]
     },
     {
@@ -135,7 +141,8 @@ const UXProjects = () => {
         research,
         define,
         wireframe,
-        final
+        final,
+        wrap
     } = project || {}; // Destructure image from the project object, default to an empty object if project is not found
 
     return (
@@ -258,7 +265,20 @@ const UXProjects = () => {
                             </div>
                         </div>
                     ))}
-                
+                </section>
+            )}
+            { wrap && (
+                <section>
+                    <h5>Final thoughts</h5>
+                    <h2>Wrap-up</h2>
+                    {wrap.map((w, index) => (
+                        <div key={index} className='define__container'>
+                            <h3>Research Limitation</h3>
+                            <p>{w.research_limitation}</p>
+                            <h3>Reflection</h3>
+                            <p>{w.reflection}</p>
+                        </div>
+                    ))}
                 </section>
             )}
         </div>
