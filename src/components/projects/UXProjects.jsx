@@ -16,6 +16,7 @@ import MembleWireframe9 from '../../assets/memble/wireframe/14.jpg'
 import MembleFinal1 from '../../assets/memble/High-fidelity/Time_Capsule(Locked).png'
 import MembleFinal2 from '../../assets/memble/High-fidelity/Time_Capsule(Pre-record).png'
 import MembleFinal3 from '../../assets/memble/High-fidelity/Time_Capsule(Post-record).png'
+import MembleVideo from '../../assets/memble/memble_vid.mp4'
 import './project.css'
 
 import ThoughtLake from '../../assets/thought_lake/ThoughtLake_title.png'
@@ -69,6 +70,7 @@ const projects = [
         ],
         final: [
             {
+                promo_vid: MembleVideo,
                 final_img1: MembleFinal1,
                 final_img2: MembleFinal2,
                 final_img3: MembleFinal3
@@ -256,6 +258,10 @@ const UXProjects = () => {
                         <div key={index} className='define__container'>
                             <div className='final_vid__container'>
                                 <h3>Promo Video</h3>
+                                <video className='promo_vid' controls>
+                                    <source src={f.promo_vid} type="video/mp4"/>
+                                    Your browser does not support the video tag.
+                                </video>
                             </div>
                         </div>
                     ))}
