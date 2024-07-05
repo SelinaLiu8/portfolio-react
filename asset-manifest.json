@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.ab661372.css",
-    "main.js": "/portfolio-react/static/js/main.412844b9.js",
+    "main.css": "/portfolio-react/static/css/main.189c99f2.css",
+    "main.js": "/portfolio-react/static/js/main.043ca42f.js",
     "static/media/avatar_sokka.JPG": "/portfolio-react/static/media/avatar_sokka.1ff9084791a8f489f031.JPG",
     "static/media/website_pic.png": "/portfolio-react/static/media/website_pic.2d8beaa97b1abbb4bcdc.png",
     "static/media/green_hair.PNG": "/portfolio-react/static/media/green_hair.5aee642e85d387b49bed.PNG",
@@ -58,7 +58,7 @@
     "static/media/Time_Capsule(Pre-record).png": "/portfolio-react/static/media/Time_Capsule(Pre-record).503885836cb1407e7568.png",
     "static/media/memble-persona.jpg": "/portfolio-react/static/media/memble-persona.80cd10f4e103132f5de9.jpg",
     "static/media/5.jpg": "/portfolio-react/static/media/5.13888dd8f8dfd7479a1a.jpg",
-    "static/media/selina_resume_Feb_24.pdf": "/portfolio-react/static/media/selina_resume_Feb_24.93946122efa7c625431d.pdf",
+    "static/media/resume_07-24.pdf": "/portfolio-react/static/media/resume_07-24.b69005b2e490140ac7af.pdf",
     "static/media/memble_img.png": "/portfolio-react/static/media/memble_img.27a2ed8edb886265b018.png",
     "static/media/meat2.png": "/portfolio-react/static/media/meat2.bd59acef3a0c1424ff26.png",
     "static/media/Time_Capsule(Post-record).png": "/portfolio-react/static/media/Time_Capsule(Post-record).6221b9404c1d47d46f78.png",
@@ -71,11 +71,11 @@
     "static/media/ring2.png": "/portfolio-react/static/media/ring2.f648555aa42877df669d.png",
     "static/media/poker club logo with background.png": "/portfolio-react/static/media/poker club logo with background.1cb40b38cac16860d53e.png",
     "index.html": "/portfolio-react/index.html",
-    "main.ab661372.css.map": "/portfolio-react/static/css/main.ab661372.css.map",
-    "main.412844b9.js.map": "/portfolio-react/static/js/main.412844b9.js.map"
+    "main.189c99f2.css.map": "/portfolio-react/static/css/main.189c99f2.css.map",
+    "main.043ca42f.js.map": "/portfolio-react/static/js/main.043ca42f.js.map"
   },
   "entrypoints": [
-    "static/css/main.ab661372.css",
-    "static/js/main.412844b9.js"
+    "static/css/main.189c99f2.css",
+    "static/js/main.043ca42f.js"
   ]
 }
