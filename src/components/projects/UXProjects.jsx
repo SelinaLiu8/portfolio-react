@@ -16,7 +16,6 @@ import MembleWireframe9 from '../../assets/memble/wireframe/14.jpg'
 import MembleFinal1 from '../../assets/memble/High-fidelity/Time_Capsule(Locked).png'
 import MembleFinal2 from '../../assets/memble/High-fidelity/Time_Capsule(Pre-record).png'
 import MembleFinal3 from '../../assets/memble/High-fidelity/Time_Capsule(Post-record).png'
-import MembleVideo from '../../assets/memble/memble_vid.mp4'
 import './project.css'
 
 import ThoughtLake from '../../assets/thought_lake/ThoughtLake_title.png'
@@ -70,10 +69,12 @@ const projects = [
         ],
         final: [
             {
-                promo_vid: MembleVideo,
-                final_img1: MembleFinal1,
-                final_img2: MembleFinal2,
-                final_img3: MembleFinal3
+                final_imgs: [
+                    MembleFinal1,
+                    MembleFinal2,
+                    MembleFinal3
+                ],
+                prototype_link: "https://www.figma.com/proto/zlm6l2yakwCCfR6krnGHVA/High-fidelity?node-id=7-178&t=G2juf3CwAabPDyHh-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=7%3A178&show-proto-sidebar=1"
             }
         ],
     },
@@ -256,13 +257,12 @@ const UXProjects = () => {
                     <h2>Final Product</h2>
                     {final.map((f, index) => (
                         <div key={index} className='define__container'>
-                            <div className='final_vid__container'>
-                                <h3>Promo Video</h3>
-                                <video className='promo_vid' controls>
-                                    <source src={f.promo_vid} type="video/mp4"/>
-                                    Your browser does not support the video tag.
-                                </video>
+                            <div className='final_img__container'>
+                                {f.final_imgs.map((i, index) => (
+                                        <img src={i} alt="memble final" />
+                                ))}
                             </div>
+                            <p>If you want to try out the app, check out the <a href={f.prototype_link}>Prototype</a> here!</p>
                         </div>
                     ))}
                 </section>

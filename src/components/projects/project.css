@@ -136,12 +136,10 @@
     gap: 2rem;
 }
 
-/* .wireframe_img {
-
-} */
-
-.promo_vid {
-    width: 100%;
+.final_img__container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
 }
 
 .description-image-img {
