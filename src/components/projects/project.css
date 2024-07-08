@@ -181,3 +181,8 @@
     top: 10px;
     right: 10px;
 }
+
+.result__container {
+    display: flex;
+    gap: 2rem;
+}
