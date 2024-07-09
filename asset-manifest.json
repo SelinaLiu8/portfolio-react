@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.189c99f2.css",
-    "main.js": "/portfolio-react/static/js/main.043ca42f.js",
+    "main.css": "/portfolio-react/static/css/main.34f608a3.css",
+    "main.js": "/portfolio-react/static/js/main.fff22b97.js",
     "static/media/avatar_sokka.JPG": "/portfolio-react/static/media/avatar_sokka.1ff9084791a8f489f031.JPG",
     "static/media/website_pic.png": "/portfolio-react/static/media/website_pic.2d8beaa97b1abbb4bcdc.png",
     "static/media/green_hair.PNG": "/portfolio-react/static/media/green_hair.5aee642e85d387b49bed.PNG",
@@ -31,6 +31,7 @@
     "static/media/Couch3_final.jpg": "/portfolio-react/static/media/Couch3_final.7cc73c8e6752cefec35c.jpg",
     "static/media/meat_final3.png": "/portfolio-react/static/media/meat_final3.d7f601b6d0dc0534ec6f.png",
     "static/media/Couch1_final.jpg": "/portfolio-react/static/media/Couch1_final.4f2551cfc0a0aa9076ec.jpg",
+    "static/media/portfolio_website_img.png": "/portfolio-react/static/media/portfolio_website_img.c71d4078e8e58b48a415.png",
     "static/media/destigma_persona.png": "/portfolio-react/static/media/destigma_persona.a6cf64c88035c9418138.png",
     "static/media/red_hair.JPG": "/portfolio-react/static/media/red_hair.516ba929414e198207e0.JPG",
     "static/media/IMG_0277.JPG": "/portfolio-react/static/media/IMG_0277.fd5dd2b520f7118c8b75.JPG",
@@ -38,6 +39,7 @@
     "static/media/earbuds1.png": "/portfolio-react/static/media/earbuds1.9ba9e779887394805906.png",
     "static/media/Uevent.png": "/portfolio-react/static/media/Uevent.95c9eb2edb0f2336891b.png",
     "static/media/memble_mockup.png": "/portfolio-react/static/media/memble_mockup.d6135706b49b31a6819a.png",
+    "static/media/react_photo.png": "/portfolio-react/static/media/react_photo.156da9c2405855d5358f.png",
     "static/media/digital_draw_cover.jpg": "/portfolio-react/static/media/digital_draw_cover.55592bd4ec63e90f9e07.jpg",
     "static/media/vampire_final.jpg": "/portfolio-react/static/media/vampire_final.55592bd4ec63e90f9e07.jpg",
     "static/media/earbuds3.png": "/portfolio-react/static/media/earbuds3.b1c7124798f65230ae31.png",
@@ -59,6 +61,7 @@
     "static/media/memble-persona.jpg": "/portfolio-react/static/media/memble-persona.80cd10f4e103132f5de9.jpg",
     "static/media/5.jpg": "/portfolio-react/static/media/5.13888dd8f8dfd7479a1a.jpg",
     "static/media/resume_07-24.pdf": "/portfolio-react/static/media/resume_07-24.b69005b2e490140ac7af.pdf",
+    "static/media/suits_tile.jpg": "/portfolio-react/static/media/suits_tile.4ebba20dc60330b0d3a3.jpg",
     "static/media/memble_img.png": "/portfolio-react/static/media/memble_img.27a2ed8edb886265b018.png",
     "static/media/meat2.png": "/portfolio-react/static/media/meat2.bd59acef3a0c1424ff26.png",
     "static/media/Time_Capsule(Post-record).png": "/portfolio-react/static/media/Time_Capsule(Post-record).6221b9404c1d47d46f78.png",
@@ -68,14 +71,15 @@
     "static/media/poker logo 2.png": "/portfolio-react/static/media/poker logo 2.83b8fcca37ad0e4c33a5.png",
     "static/media/Time_Capsule(Locked).png": "/portfolio-react/static/media/Time_Capsule(Locked).d0ef3659a014bfca9a0d.png",
     "static/media/poker club logo.png": "/portfolio-react/static/media/poker club logo.5ad47719539e6f2c00de.png",
+    "static/media/nasa_topimg.jpeg": "/portfolio-react/static/media/nasa_topimg.fd31e98fa6ba8c645adb.jpeg",
     "static/media/ring2.png": "/portfolio-react/static/media/ring2.f648555aa42877df669d.png",
     "static/media/poker club logo with background.png": "/portfolio-react/static/media/poker club logo with background.1cb40b38cac16860d53e.png",
     "index.html": "/portfolio-react/index.html",
-    "main.189c99f2.css.map": "/portfolio-react/static/css/main.189c99f2.css.map",
-    "main.043ca42f.js.map": "/portfolio-react/static/js/main.043ca42f.js.map"
+    "main.34f608a3.css.map": "/portfolio-react/static/css/main.34f608a3.css.map",
+    "main.fff22b97.js.map": "/portfolio-react/static/js/main.fff22b97.js.map"
   },
   "entrypoints": [
-    "static/css/main.189c99f2.css",
-    "static/js/main.043ca42f.js"
+    "static/css/main.34f608a3.css",
+    "static/js/main.fff22b97.js"
   ]
 }
