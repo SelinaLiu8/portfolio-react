@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import PersonalWebsite from '../../assets/website_pic.png';
+import PersonalImg1 from '../../assets/portfolio_website_img.png'
+import PersonalImg2 from '../../assets/react_photo.png'
 import NASA from '../../assets/nasa_topimg.jpeg';
 import NASASuits from '../../assets/suits_tile.jpg';
 import CLAWS from '../../assets/claws_um_logo.jpg'
@@ -13,8 +15,10 @@ const projects = [
         title: "Personal Portfolio Website",
         project_description: "Explore my latest project, where I've meticulously crafted a seamless user experience featuring both light and dark modes. Immerse yourself in the sleek design as you navigate through the various sections, each meticulously designed with attention to detail. Powered by React.js, every element of this website has been hand-coded with precision and passion. From the dynamic animations to the responsive layout, every aspect has been carefully crafted to ensure a seamless experience across all devices. Whether you're here to discover my latest work or learn more about my skills and experiences, this portfolio represents the culmination of my dedication to creating intuitive and visually stunning web experiences. Take a tour, and let's embark on a journey through creativity and innovation together!",
         my_role: "Since this is a personal project, I worked on both the design and the development of website.",
-        demo: "",
-        github:"",
+        demo: "https://selinaliu8.github.io/portfolio-react/",
+        github:"https://github.com/SelinaLiu8/portfolio-react",
+        first_img: PersonalImg1,
+        second_img: PersonalImg2
     },
     {
         param: "nasa_suit_challenge",
@@ -58,7 +62,7 @@ const CSProjects = () => {
                 <h2>Result</h2>
                 <div className='result__container'>
                     <article className="portfolio__item cs_project_card">
-                        <div className="portfolio__item-img">
+                        <div className="portfolio__item-img cs_card_img">
                             <img src={first_img} alt={title} />
                         </div>
                         <h3>{title}</h3>
@@ -67,7 +71,7 @@ const CSProjects = () => {
                         </a>
                     </article>
                     <article className="portfolio__item cs_project_card">
-                        <div className="portfolio__item-img">
+                        <div className="portfolio__item-img cs_card_img">
                             <img src={second_img} alt={title} />
                         </div>
                         <h3>{title}</h3>
