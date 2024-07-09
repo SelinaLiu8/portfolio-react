@@ -3,7 +3,7 @@ import './portfolio.css'
 import { Link } from 'react-router-dom';
 import Popup from 'reactjs-popup';
 import PersonalWebsite from '../../assets/website_pic.png'
-import NASALogo from '../../assets/nasa-logo.png'
+import NASALogo from '../../assets/nasa_topimg.jpeg'
 import Memble from '../../assets/memble/memble_mockup.png'
 import Destigma from '../../assets/destigma_mockup.png'
 import DestigmaPersona from '../../assets/destigma_persona.png'
