@@ -38,11 +38,6 @@ const uxProjects = [
     title : "Thought_Lake",
     image: ThoughtLake
   }, 
-  {
-    routeName : "uevent",
-    title : "UEvent",
-    image: UEvent
-  }
 ];
 
 const artProjects = [
