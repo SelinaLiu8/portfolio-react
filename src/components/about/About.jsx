@@ -29,7 +29,9 @@ const About = () => {
             <article className='about__card'>
               <MdSchool className='about__icon'/>
               <h5>Education</h5>
-              <small>4 year Bachelor, Art, UX Design, Computer Science</small>
+              <small>Bachelor in Art, UX Design, Computer Science</small>
+              <br/>
+              <small>Masters in Information Management -- Data Science</small>
             </article>
             <article className='about__card'>
               <AiFillProject className='about__icon'/>
