@@ -29,9 +29,9 @@ const About = () => {
             <article className='about__card'>
               <MdSchool className='about__icon'/>
               <h5>Education</h5>
-              <small>Bachelor in Art, UX Design, Computer Science</small>
+              <small>Masters in Information Management -- Business Intelligence</small>
               <br/>
-              <small>Masters in Information Management -- Data Science</small>
+              <small>Bachelor in Art, UX Design, Computer Science</small>
             </article>
             <article className='about__card'>
               <AiFillProject className='about__icon'/>
@@ -39,7 +39,7 @@ const About = () => {
               <small>15+ software engineering projects and 10+ UX/UI projects</small>
             </article>
           </div>
-          <p>I'm an undergrad student at the University of Michigan majoring in art & design and minoring in computer science and user experience design. About a year and a half ago, I began experimenting with coding and UX/UI design. In order to engage more closely with the UX/UI industry, I joined Alpha Theta Delta, a professional multidisciplinary design fraternity on campus. I presently hold the job of VP of Outreach, where I get to assist our fraternity in developing relationships with other organizations. In addition, I became a member of CLAWS's (Collaborative Lab for Advancing Work in Space) Augmented Reality team to build the annual NASA Spacesuit Challenge in Unity and C#. Procter & Gamble recently hired me as a summer intern for information technology, where I will focus on UX/UI design.</p>
+          <p>I am a master's student at the University of Washington pursuing a Master of Science in Information Management specializing in Business Intelligence. Before moving to Seattle, I completed my 4-year undergraduate education at the University of Michigan with a Bachelor of Arts in Art & Design specializing in UX/UI design. <br/><br/>I am passionate about using innovative technological solutions to solve day-to-day problems. My technical background includes SQL, JavaScript, HTML/CSS, React.js, Unity, Python, C++, UX/UI design, UX research, and Figma. I also have other backgrounds in team leadership, and project management. I am eager to use my skills in technology to advance both personally and professionally.</p>
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>
         </div>
       </div>
