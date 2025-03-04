@@ -2,6 +2,7 @@ import React from 'react'
 import './portfolio.css'
 import { Link } from 'react-router-dom';
 import Popup from 'reactjs-popup';
+import CrisprBuildrLogo from '../../assets/crisprbuildr-mockup_1.png'
 import PersonalWebsite from '../../assets/website_pic.png'
 import NASALogo from '../../assets/nasa_topimg.jpeg'
 import Memble from '../../assets/memble/memble_mockup.png'
@@ -15,6 +16,11 @@ import ThreeDModel from '../../assets/3d_cover.png'
 import GraphicDesign from '../../assets/graphic_design_cover.png'
 
 const csProjects = [
+  {
+    routeName : "crispr_buildr",
+    title : "CrisprBuildr",
+    image: CrisprBuildrLogo
+  },
   {
     routeName : "personal_portfolio_website",
     title : "Personal Portfolio Website",

@@ -6,9 +6,23 @@ import PersonalImg2 from '../../assets/react_photo.png'
 import NASA from '../../assets/nasa_topimg.jpeg';
 import NASASuits from '../../assets/suits_tile.jpg';
 import CLAWS from '../../assets/claws_um_logo.jpg'
+import CrisprBuildr from '../../assets/crisprbuildr_header.png'
+import Crisp1 from '../../assets/CB_ss1.png'
+import Crisp2 from '../../assets/CB2.jpg'
 import './project.css'
 
 const projects = [
+    {
+        param: "crispr_buildr",
+        image: CrisprBuildr,
+        title: "CrisprBuildr",
+        project_description: "CrisprBuildr is a web-based application designed to streamline CRISPR/Cas9-based genome engineering experiments by enabling users to efficiently delete genes or insert fluorescent protein tags at the N- or C-terminus of their gene of interest. Built on the Drosophila melanogaster genome, the platform serves as a template for adaptation to other genomes. To support advanced protein characterization in vivo, we have developed new tagging vectors incorporating EGFP and mCherry, combined with the small peptide SspB-Q73R for iLID-based optogenetic applications. CrisprBuildr simplifies the process of designing guide RNAs and repair template vectors, reducing the repetitive and time-consuming nature of construct generation. As an open-source tool, future iterations may expand to include additional tagging or deletion vectors, broader genome compatibility, and enhanced CRISPR applications.",
+        my_role: "In this role, I managed the migration of the application repository, implemented key features such as a new 'Delete' function for gene template management, and resolved over 20 critical bugs to improve system stability. I also documented essential processes for SQL and IP user access, ensuring seamless knowledge transfer. Additionally, my contributions were recognized through authorship in bioRxiv and GENETICS publications, reflecting the impact of my technical work on the broader research community. You can find the publication here: [bioRxiv](https://www.biorxiv.org/content/10.1101/2025.02.28.640916v1).",
+        demo: "http://142.93.118.6/",
+        github:"https://github.com/SelinaLiu8/fly-server",
+        first_img: Crisp1,
+        second_img: Crisp2
+    },
     {
         param: "personal_portfolio_website",
         image: PersonalWebsite,
