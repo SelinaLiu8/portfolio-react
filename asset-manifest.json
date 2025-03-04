@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-react/static/css/main.34f608a3.css",
-    "main.js": "/portfolio-react/static/js/main.3b5c4fc5.js",
+    "main.js": "/portfolio-react/static/js/main.6f12e6c9.js",
     "static/media/avatar_sokka.JPG": "/portfolio-react/static/media/avatar_sokka.1ff9084791a8f489f031.JPG",
     "static/media/website_pic.png": "/portfolio-react/static/media/website_pic.2d8beaa97b1abbb4bcdc.png",
     "static/media/green_hair.PNG": "/portfolio-react/static/media/green_hair.5aee642e85d387b49bed.PNG",
@@ -32,8 +32,10 @@
     "static/media/meat_final3.png": "/portfolio-react/static/media/meat_final3.d7f601b6d0dc0534ec6f.png",
     "static/media/Couch1_final.jpg": "/portfolio-react/static/media/Couch1_final.4f2551cfc0a0aa9076ec.jpg",
     "static/media/portfolio_website_img.png": "/portfolio-react/static/media/portfolio_website_img.c71d4078e8e58b48a415.png",
+    "static/media/crisprbuildr-mockup_1.png": "/portfolio-react/static/media/crisprbuildr-mockup_1.297d949755475b484c41.png",
     "static/media/destigma_persona.png": "/portfolio-react/static/media/destigma_persona.a6cf64c88035c9418138.png",
     "static/media/red_hair.JPG": "/portfolio-react/static/media/red_hair.516ba929414e198207e0.JPG",
+    "static/media/CB_ss1.png": "/portfolio-react/static/media/CB_ss1.6a256573bbc416274ab6.png",
     "static/media/IMG_0277.JPG": "/portfolio-react/static/media/IMG_0277.fd5dd2b520f7118c8b75.JPG",
     "static/media/ThoughtLake_title.png": "/portfolio-react/static/media/ThoughtLake_title.9ee594f5ee1a59f64a52.png",
     "static/media/earbuds1.png": "/portfolio-react/static/media/earbuds1.9ba9e779887394805906.png",
@@ -60,13 +62,15 @@
     "static/media/Time_Capsule(Pre-record).png": "/portfolio-react/static/media/Time_Capsule(Pre-record).503885836cb1407e7568.png",
     "static/media/memble-persona.jpg": "/portfolio-react/static/media/memble-persona.80cd10f4e103132f5de9.jpg",
     "static/media/5.jpg": "/portfolio-react/static/media/5.13888dd8f8dfd7479a1a.jpg",
-    "static/media/resume_10-7.pdf": "/portfolio-react/static/media/resume_10-7.6e8e44c2cf937bccdcde.pdf",
+    "static/media/PM_Resume_3:3_2025.pdf": "/portfolio-react/static/media/PM_Resume_3:3_2025.042f273281086f548767.pdf",
     "static/media/suits_tile.jpg": "/portfolio-react/static/media/suits_tile.4ebba20dc60330b0d3a3.jpg",
     "static/media/memble_img.png": "/portfolio-react/static/media/memble_img.27a2ed8edb886265b018.png",
     "static/media/meat2.png": "/portfolio-react/static/media/meat2.bd59acef3a0c1424ff26.png",
     "static/media/Time_Capsule(Post-record).png": "/portfolio-react/static/media/Time_Capsule(Post-record).6221b9404c1d47d46f78.png",
     "static/media/meat3.png": "/portfolio-react/static/media/meat3.78f6f9321242a489107a.png",
     "static/media/nasa-logo.png": "/portfolio-react/static/media/nasa-logo.85550010d7334d9be62e.png",
+    "static/media/crisprbuildr_header.png": "/portfolio-react/static/media/crisprbuildr_header.979c007a4574fa31900f.png",
+    "static/media/CB2.jpg": "/portfolio-react/static/media/CB2.11cb4220d8a695ce1e64.jpg",
     "static/media/graphic_design_cover.png": "/portfolio-react/static/media/graphic_design_cover.83b8fcca37ad0e4c33a5.png",
     "static/media/poker logo 2.png": "/portfolio-react/static/media/poker logo 2.83b8fcca37ad0e4c33a5.png",
     "static/media/Time_Capsule(Locked).png": "/portfolio-react/static/media/Time_Capsule(Locked).d0ef3659a014bfca9a0d.png",
@@ -76,10 +80,10 @@
     "static/media/poker club logo with background.png": "/portfolio-react/static/media/poker club logo with background.1cb40b38cac16860d53e.png",
     "index.html": "/portfolio-react/index.html",
     "main.34f608a3.css.map": "/portfolio-react/static/css/main.34f608a3.css.map",
-    "main.3b5c4fc5.js.map": "/portfolio-react/static/js/main.3b5c4fc5.js.map"
+    "main.6f12e6c9.js.map": "/portfolio-react/static/js/main.6f12e6c9.js.map"
   },
   "entrypoints": [
     "static/css/main.34f608a3.css",
-    "static/js/main.3b5c4fc5.js"
+    "static/js/main.6f12e6c9.js"
   ]
 }
